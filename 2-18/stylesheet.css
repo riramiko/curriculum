@@ -1,0 +1,38 @@
+body {
+    background-color: gray;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 150px;
+    border-bottom: medium solid #fff;
+    color: #fff;
+}
+
+h2 {
+    text-align: center;
+    margin-top: 30px;
+    color: #fff;
+}
+
+p {
+    text-align: center;
+    margin-top: 15px;
+    color: #fff;
+}
+
+.title {
+    margin-top: 70px;
+}
+
+form {
+    text-align: center;
+}
+
+.top {
+    padding-top: 50px;
+}
+
+input[type="submit"] {
+    border-radius: 7px;	
+}

@@ -1,0 +1,70 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    text-align: center;
+}
+
+.wrap {
+    margin: 0 auto;
+    width: 1000px;
+}
+
+.header {
+    width: 1000px;
+    height: 120px;
+    background-color: #add8e6;
+    display: flex;
+}
+
+.logo {
+    width: 200px;
+    height: 120px;
+}
+
+.logo img {
+    width: 200px;
+    height: 120px;
+}
+
+.inner {
+    width: 800px;
+    display: flex;
+    flex-direction: column;
+}
+
+.user {
+    height: 60px;
+    background-color: #87ceeb;
+    text-align: right;
+    line-height: 60px;
+}
+
+.login {
+    height: 60px;
+    background-color: #00ffff;
+    text-align: right;
+    line-height: 60px;
+}
+
+.posts table {
+    margin: 10px auto;
+}
+
+.posts th {
+    text-align: center;
+    background-color: #87ceeb;
+}
+
+.posts td {
+    text-align: left;
+    background-color: #e0ffff;
+}
+
+.footer {
+    height: 50px;
+    background-color: #00ced1;
+    text-align: left;
+}
