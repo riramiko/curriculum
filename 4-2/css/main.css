@@ -1,0 +1,121 @@
+/* 共通部分 */
+body {
+    background-color: #c0c0c0;
+}
+
+h2 {
+    margin-bottom: 20px;
+}
+
+.wrap {
+    width: 1024px;
+    margin: 0 auto;
+    padding: 100px;
+    background-color: #fff;
+    box-shadow: 0 0 8px gray;
+}
+
+.blue_btn {
+    width: 150px;
+    padding: 5px 20px;
+    background-color: #3366FF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+}
+
+.blue_small_btn {
+    margin-bottom: 20px;
+    margin-right: 20px;
+    padding: 5px 20px;
+    background-color: #3366FF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+}
+
+.green_btn {
+    width: 170px;
+    padding: 5px 20px;
+    background-color: #339999;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+}
+
+.gray_btn {
+    width: 150px;
+    padding: 5px 20px;
+    background-color: #555555;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+}
+
+.gray_small_btn {
+    padding: 5px 20px;
+    background-color: #777777;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+}
+
+/* ログイン */
+.byside {
+    display: flex;
+    width: 420px;
+    height: 100px;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+h2.byside {
+    display: inline-block;
+}
+
+input.byside {
+    display: inline-block;
+    padding: 5px 15px;
+}
+
+/* メイン */
+table {
+    border-collapse: collapse;
+    width: 100%;
+    text-align: center;
+}
+
+th,td {
+    border: solid 1px #c0c0c0;
+    padding: 15px 5px;
+}
+
+th {
+    background-color: #E5E5E5;
+}
+
+a.del {
+    display: inline-block;
+    text-decoration: none;
+    background:red; 
+    color:#fff; 
+    padding:5px 15px; 
+    border-radius:5px;
+}
+
+/* ログアウト */
+a.return {
+    display: inline-block;
+    text-decoration: none;
+    background:red; 
+    color:#fff; 
+    margin-top: 15px;
+    padding:5px 15px; 
+    border-radius:5px;
+}
+
+p.return {
+    margin-top: 30px;
+    margin-left: 5px;
+}
