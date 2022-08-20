@@ -1,0 +1,17 @@
+ul {
+    list-style: none;
+}
+.alert {
+    background-color: pink;
+    border: 1px solid red;
+}
+.done {
+    text-decoration: line-through;
+}
+.wrap {
+    display: flex;
+    margin-bottom: 10px;
+}
+.wrap button {
+    margin-left: 10px;
+}
