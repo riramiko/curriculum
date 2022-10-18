@@ -1,0 +1,232 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Kiwi Maru", serif;
+  background-color: #FAECE1;
+  color: #383838;
+}
+
+p {
+  font-size: 22px;
+}
+
+.wrapper {
+  width: 980px;
+  margin: 0 auto 60px;
+}
+
+.wrap_m {
+  width: 980px;
+}
+
+.wrap_s {
+  width: 780px;
+  margin: 0 auto 30px;
+}
+
+.flexbox {
+  display: flex;
+}
+
+.title_l {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 120px;
+  background-color: #FAC6B5;
+  margin-left: calc((100vw - 100%) / 2 * -1);
+  margin-right: calc((100vw - 100%) / 2 * -1);
+  margin-bottom: 60px;
+}
+.title_l h2 {
+  font-size: 30px;
+}
+
+.title_m {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  width: 980px;
+  margin-bottom: 40px;
+  height: 90px;
+  text-align: center;
+  border-bottom: solid 2px #773400;
+}
+.title_m h3 {
+  width: 780px;
+  font-size: 26px;
+  color: #773400;
+  text-align: left;
+}
+
+.title_s {
+  margin: 0 auto 25px;
+  width: 780px;
+  height: 35px;
+  border-left: solid 5px #773400;
+  background-color: #FAC6B5;
+}
+.title_s h4 {
+  font-size: 22px;
+  padding-left: 15px;
+}
+
+.illustrated {
+  width: 564px;
+  margin: 0 auto 60px;
+  text-align: center;
+}
+.illustrated figure figcaption {
+  text-align: left;
+}
+
+header {
+  margin-bottom: 50px;
+}
+header .site_title {
+  height: 150px;
+  width: 100%;
+  text-align: center;
+}
+header .site_title h1 {
+  width: 100%;
+  padding-top: 50px;
+  color: #773400;
+  border-bottom: solid 2px #773400;
+}
+header .top_vision {
+  background-color: #FAC6B5;
+  margin-left: calc((100vw - 100%) / 2 * -1);
+  margin-right: calc((100vw - 100%) / 2 * -1);
+}
+header .top_vision .wrap_m {
+  margin: 0 auto;
+  padding: 40px 0;
+}
+header .top_vision .wrap_m h2 {
+  text-align: center;
+  color: #773400;
+}
+header .top_vision .wrap_m .flexbox .leading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 100px 0 50px;
+  width: 340px;
+  height: 340px;
+  background-color: #773400;
+}
+header .top_vision .wrap_m .flexbox .leading p {
+  text-align: center;
+  color: #FAECE1;
+  font-size: 34px;
+  line-height: 2.5;
+}
+header .top_vision .wrap_m .flexbox ul li {
+  color: #773400;
+  font-size: 32px;
+}
+header .top_vision .top_photo .slideshow_container {
+  display: flex;
+  justify-content: center;
+}
+header .top_vision .top_photo .slideshow_container img {
+  width: 120vw;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.about {
+  margin-bottom: 50px;
+}
+.about .wrap_s p {
+  margin-bottom: 60px;
+}
+.about .title_about {
+  margin-bottom: 50px;
+  display: flex;
+  height: 70px;
+  align-items: center;
+  justify-content: center;
+  background-color: #78B3A9;
+}
+.about .title_about h2 {
+  font-size: 28px;
+}
+
+main .recipe .wrap_s p {
+  margin-bottom: 10px;
+}
+main .recipe .wrap_s ul {
+  margin-bottom: 20px;
+  padding-left: 40px;
+}
+main .recipe .wrap_s ul li {
+  font-size: 20px;
+}
+
+.customize .wrap_s p {
+  padding-bottom: 50px;
+}
+.customize .wrap_s dl dt {
+  margin-bottom: 10px;
+  padding-left: 10px;
+  font-size: 20px;
+  font-weight: bold;
+  border-left: solid 5px #FAC6B5;
+}
+.customize .wrap_s dl dd {
+  font-size: 18px;
+  padding-left: 15px;
+  padding-bottom: 40px;
+}
+
+.conclusion .wrap_s ol {
+  margin-bottom: 50px;
+}
+.conclusion .wrap_s ol li {
+  line-height: 3;
+  font-size: 20px;
+}
+.conclusion .wrap_s .catch p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 160px;
+  background-color: #FAC6B5;
+  margin-left: calc((100vw - 100%) / 2 * -1);
+  margin-right: calc((100vw - 100%) / 2 * -1);
+  font-weight: bold;
+  margin-bottom: 60px;
+}
+
+.blog {
+  width: 980px;
+  display: flex;
+  justify-content: space-between;
+}
+.blog .topic {
+  width: 30%;
+  background-color: #fff;
+  padding-bottom: 10px;
+  border: solid 1px #ddd;
+}
+.blog .topic figure {
+  text-align: center;
+}
+.blog .topic figure a {
+  text-decoration: none;
+  color: #773400;
+}
+.blog .topic figure a figcaption {
+  display: block;
+  height: 60px;
+  font-weight: bold;
+}/*# sourceMappingURL=style.css.map */
