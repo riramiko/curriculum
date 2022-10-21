@@ -52,7 +52,6 @@ p {
   display: flex;
   align-items: flex-end;
   justify-content: center;
-  width: 80%;
   margin-bottom: 40px;
   height: 90px;
   text-align: center;
@@ -208,7 +207,6 @@ main .recipe .wrap_s ul li {
 }
 
 .blog {
-  width: 80%;
   display: flex;
   justify-content: space-between;
 }
@@ -230,6 +228,11 @@ main .recipe .wrap_s ul li {
   height: 60px;
   font-weight: bold;
 }
+.blog .topic figure a img {
+  width: 90%;
+  height: auto;
+}
+
 @media only screen and (max-width: 780px) {
   p {
     font-size: 18px;
