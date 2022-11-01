@@ -8,242 +8,268 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="js/script.js"></script>
     <title>かんたんに書ける手帳</title>
 </head>
 
 <body>
-    <div class="wrapper">
-        <header>
-            <div class="site_title">
-                <h1>かんたんに書ける手帳</h1>
+
+    <!-- header -->
+    <header>
+        <div class="site_title">
+            <h1>かんたんに書ける手帳</h1>
+        </div>
+        <div class="top_vision">
+            <div class="wrap_m">
+                <h2>ボールペンとノートだけで始める<br>
+                    挫折しない手帳の書き方</h2>
             </div>
-            <div class="top_vision">
-                <div class="wrap_m">
-                    <h2>ボールペンとノートだけで始める<br>
-                        挫折しない手帳の書き方</h2>
+            <div class="top_photo">
+                <div class="slider">
+                    <div><img src="images/main01.jpg" alt="" /></div>
+                    <div><img src="images/main02.jpg" alt="" /></div>
+                    <div><img src="images/main03.jpg" alt="" /></div>
+                    <div><img src="images/main04.jpg" alt="" /></div>
+                    <div><img src="images/main05.jpg" alt="" /></div>
+                    <div><img src="images/main06.jpg" alt="" /></div>
                 </div>
-                <div class="top_photo">
-                    <div class="slideshow_container">
-                        <img src="images/main_01.jpg" id="slide_img" class="slider">
+            </div>
+            <div class="wrap_m">
+                <div class="flexbox">
+                    <div class="leading">
+                        <p>こんな人に<br>オススメの<br>手帳術です</p>
                     </div>
-                </div>
-                <div class="wrap_m">
-                    <div class="flexbox">
-                        <div class="leading">
-                            <p>こんな人に<br>オススメの<br>手帳術です</p>
-                        </div>
-                        <ul>
-                            <li>手帳が続かない</li>
-                            <li>やることを後回しにする</li>
-                            <li>時間に追われている</li>
-                            <li>締め切りギリギリ</li>
-                            <li>落ち込みやすい</li>
-                            <li>忘れ物が多い</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </header>
-        <section class="about">
-            <div class="wrap_s">
-                <p>日々の暮らしの中、忙しく1日が24時間では足りないと感じている人は多いのではないでしょうか。<br>
-                    <br>
-                    常に頭の中は、たくさんの情報が溢れていて、脳をフル回転させています。<br>
-                    <br>
-                    そんな状態が続いていると、脳が疲れてしまい、集中力がなくなって忘れっぽくなったり、やる気が起きず、やることを先延ばしにして、出来なかったことで自己肯定感が下がり、落ち込みやすくなったりします。
-                </p>
-            </div>
-            <div class="title_about">
-                <h2>書いて忘れることで、「やりたいこと」が叶う</h2>
-            </div>
-            <div class="wrap_s">
-                <p>「覚えておく」ことは、脳が常に活動している状態ですので、疲れてくるとパフォーマンスが低下します。<br>
-                    タイミング良く休憩できないことの方が多いので、なるべく脳の活動量を減らして、フル回転させないことが重要です。<br>
-                    <br>
-                    そこで、手帳に「書いて忘れる」のです！ <br>
-                    手帳を確認するときは、社長が秘書に「今日の予定は？」と聞くような気分で見てください。<br>
-                    <br>
-                    後は、深く考えずに書いてあることを、重要度の高いものから行動するだけです。<br>
-                    <br>
-                    気付けば、「やりたいこと」が終わっているはず。
-                </p>
-            </div>
-        </section>
-        <main>
-            <section class="recipe">
-                <div class="title_l">
-                    <h2>思考と行動を管理する手帳の書き方</h2>
-                </div>
-                <div class="wrap_s">
-                    <p>【 用意する物 】</p>
                     <ul>
-                        <li>手帳（ノートでもOK）</li>
-                        <li>ボールペン（フリクションの4色ペンがオススメ）</li>
+                        <li>手帳が続かない</li>
+                        <li>やることを後回しにする</li>
+                        <li>時間に追われている</li>
+                        <li>締め切りギリギリ</li>
+                        <li>落ち込みやすい</li>
+                        <li>忘れ物が多い</li>
                     </ul>
                 </div>
-                <div class="title_m">
-                    <h3>最低限記入するコンテンツは２つ</h3>
+            </div>
+        </div>
+    </header><!-- header END -->
+
+    <!-- about -->
+    <section class="about">
+        <div class="wrap_s">
+            <p>日々の暮らしの中、忙しく1日が24時間では足りないと感じている人は多いのではないでしょうか。<br>
+                <br>
+                常に頭の中は、たくさんの情報が溢れていて、脳をフル回転させています。<br>
+                <br>
+                そんな状態が続いていると、脳が疲れてしまい、集中力がなくなって忘れっぽくなったり、やる気が起きず、やることを先延ばしにして、出来なかったことで自己肯定感が下がり、落ち込みやすくなったりします。
+            </p>
+        </div>
+        <div class="title_about">
+            <h2>書いて忘れることで、「やりたいこと」が叶う</h2>
+        </div>
+        <div class="wrap_s">
+            <p>「覚えておく」ことは、脳が常に活動している状態ですので、疲れてくるとパフォーマンスが低下します。<br>
+                タイミング良く休憩できないことの方が多いので、なるべく脳の活動量を減らして、フル回転させないことが重要です。<br>
+                <br>
+                そこで、手帳に「書いて忘れる」のです！ <br>
+                手帳を確認するときは、社長が秘書に「今日の予定は？」と聞くような気分で見てください。<br>
+                <br>
+                後は、深く考えずに書いてあることを、重要度の高いものから行動するだけです。<br>
+                <br>
+                気付けば、「やりたいこと」が終わっているはず。
+            </p>
+        </div>
+    </section><!-- about END -->
+
+    <main>
+        <!-- recipe -->
+        <section class="recipe">
+            <div class="title_l">
+                <h2>思考と行動を管理する手帳の書き方</h2>
+            </div>
+            <div class="title_m">
+                <h3>用意する物は２つ</h3>
+            </div>
+            <div class="wrap_s">
+                <p>好きな手帳とペンを用意します。手帳ではなく、ノートでも出来ますよ。<br>
+                    表紙がきれいだったり、好みのシールや切り抜きでデコったり、書き心地が良いものなど、<br>
+                    手に取りたくなるような、お気に入りの手帳で始めてみてください。
+                </p>
+                <ul>
+                    <li>手帳（ノートでもOK）</li>
+                    <li>ボールペン（フリクションの4色ペンがオススメ）</li>
+                </ul>
+            </div>
+            <div class="title_m">
+                <h3>最低限記入するコンテンツは２つ</h3>
+            </div>
+            <div class="wrap_s">
+                <p>予定を管理するマンスリーと、やることを管理するデイリーの２つです。</p>
+                <ul>
+                    <li>Monthly Log（マンスリーログ）</li>
+                    <li>Daily Log（デイリーログ）</li>
+                </ul>
+            </div>
+            <section class="monthly">
+                <div class="title_s">
+                    <h4>Monthly Log（マンスリーログ）</h4>
                 </div>
                 <div class="wrap_s">
-                    <p>【 用意する物 】</p>
-                    <ul>
-                        <li>Monthly Log（マンスリーログ）</li>
-                        <li>Daily Log（デイリーログ）</li>
-                    </ul>
-                    <p>の２つです。では、一つずつ解説していきますね。</p>
+                    <p>1ヶ月分の予定を書き込むマンスリーログ。<br>
+                        その月の全ての予定はここにまとめて記入します。<br>
+                        日程の決まっていないやることや、達成したい目標などを書くために、余白部分を作っておく。<br>
+                        <br>
+                        色んなスタイルのマンスリーログがあります。
+                    </p>
                 </div>
-                <section class="monthly">
-                    <div class="title_s">
-                        <h4>Monthly Log（マンスリーログ）</h4>
-                    </div>
-                    <div class="wrap_s">
-                        <p>1ヶ月分の予定を書き込むマンスリーログ。<br>
-                            その月の全ての予定はここにまとめて記入します。<br>
-                            日程の決まっていないやることや、達成したい目標などを書くために、余白部分を作っておく。<br>
-                            <br>
-                            色んなスタイルのマンスリーログがあります。
-                        </p>
-                    </div>
-                    <div class="illustrated">
-                        <figure>
-                            <img src="images/monthly01.png" alt="マンスリーの見本1">
-                            <figcaption>よく見るマンスリーログ。<br>
-                                見開き2ページを使ったカレンダー形式です。</figcaption>
-                        </figure>
-                    </div>
-                    <div class="illustrated">
-                        <figure>
-                            <img src="images/monthly02.jpg" alt="マンスリーの見本2">
-                            <figcaption>縦書きのマンスリーログ。<br>
-                                日付と曜日を縦書きしたシンプルなカレンダー。<br>
-                                ガンチャートのように記入できるため、プロジェクトや、作業が数日かかることを管理するのに便利。</figcaption>
-                        </figure>
-                    </div>
-                    <div class="illustrated">
-                        <figure>
-                            <img src="images/monthly03.jpg" alt="マンスリーの見本3">
-                            <figcaption>カレンダーとリストのマンスリーログ。<br>
-                                予定・やることはカレンダーの下に、リスト形式で記入する。</figcaption>
-                        </figure>
-                    </div>
-                </section>
-                <section class="daily">
-                    <div class="title_s">
-                        <h4>Daily Log（デイリーログ）</h4>
-                    </div>
-                    <div class="wrap_s">
-                        <p>1日の予定やタスクを管理するデイリーログ。<br>
-                            予定とやることを箇条書きで書きます。<br>
-                            やることは、なるべく細分化しましょう。<br>
-                            書いたら、優先順位をつけていきます。<br>
-                            <br>
-                            後は、優先度の高い事柄から行動していきましょう。<br>
-                            疲れているときなどは、数分で完了することからやったり、落ち込んでいるときは、気分をリフレッシュさせることを優先したり、体調や気分と相談して決めると行動しやすくなります。
-                        </p>
-                    </div>
-                    <div class="illustrated">
-                        <figure>
-                            <img src="images/daily01.jpg" alt="デイリーの見本1">
-                            <figcaption>1日分ずつを記入する、シンプルなデイリーログ。</figcaption>
-                        </figure>
-                    </div>
-                    <div class="illustrated">
-                        <figure>
-                            <img src="images/daily02.jpg" alt="デイリーの見本2">
-                            <figcaption>見開き1週間の、シンプルなデイリーログ。</figcaption>
-                        </figure>
-                    </div>
-                    <div class="illustrated">
-                        <figure>
-                            <img src="images/daily03.jpg" alt="デイリーの見本3">
-                            <figcaption>1ページ2日の、デイリーログ。<br>
-                                縦に時間軸を書いて、時間の管理もできます。</figcaption>
-                        </figure>
-                    </div>
-                </section>
-                <div class="usage">
-                    <div class="wrap_s">
-                        <p>箇条書きの先頭に記号をつけて、内容がパッと見て、素早く簡潔に分かるようにします。<br>
-                            <br>
-                            【 情報の種類 】<br>
-                            「&middot;」&#058;やること（当日のToDoなどすぐに実行できるもの）<br>
-                            「&#9675;」&#058;イベント（誕生日や、商談など大事な予定）<br>
-                            「&mdash;」&#058;メモ書き（思いついたことや、すぐに実行しないこと、情報など）<br>
-                            「&ast;」&#058;重要（とくに重要なイベントなど）<br>
-                            「&#033;」&#058;アイデア（ひらめきや今後のためのアイデア）<br>
-                            <br>
-                            【 やることの進捗度 】<br>
-                            「×」&#058;完了した<br>
-                            「&gt;」&#058;別の日にやる予定<br>
-                            「&mdash;&mdash;&mdash;」&#058;キャンセル（やらないことにする）
-                        </p>
-                    </div>
+                <div class="illustrated">
+                    <figure>
+                        <img src="images/monthly01.png" alt="マンスリーの見本1">
+                        <figcaption>よく見るマンスリーログ。<br>
+                            見開き2ページを使ったカレンダー形式です。</figcaption>
+                    </figure>
+                </div>
+                <div class="illustrated">
+                    <figure>
+                        <img src="images/monthly02.jpg" alt="マンスリーの見本2">
+                        <figcaption>縦書きのマンスリーログ。<br>
+                            日付と曜日を縦書きしたシンプルなカレンダー。<br>
+                            ガンチャートのように記入できるため、プロジェクトや、作業が数日かかることを管理するのに便利。</figcaption>
+                    </figure>
+                </div>
+                <div class="illustrated">
+                    <figure>
+                        <img src="images/monthly03.jpg" alt="マンスリーの見本3">
+                        <figcaption>カレンダーとリストのマンスリーログ。<br>
+                            予定・やることはカレンダーの下に、リスト形式で記入する。</figcaption>
+                    </figure>
                 </div>
             </section>
-        </main>
-
-        <section class="customize">
-            <div class="title_m">
-                <h3>手帳に慣れてきたら</h3>
-            </div>
-            <div class="wrap_s">
-                <p>基本の書き方に慣れてきたら、自分だけのコレクションのページを作ってみてはいかがですか？<br>
-                    私が活用しているコレクションページの一部をご紹介します。
-                </p>
-                <dl>
-                    <dt>食事ログ</dt>
-                    <dd>
-                        夕食だけを記録しています。<br>外食の回数や、食生活の乱れがないかcheck出来たり<br>献立に迷ったときなどに役立ちます。
-                    </dd>
-                    <dt>お出掛けログ</dt>
-                    <dd>出不精解消に書いています。</dd>
-                    <dt>天気&amp;体調ログ</dt>
-                    <dd>気圧の変化で体調を崩すことがあるので、記録しています。</dd>
-                    <dt>家事ログ（月間）</dt>
-                    <dd>家事の一覧表を作り、デイリーで「今日やると決めた家事」が実行できたら<br>
-                        丸を付けています。<br>
-                        すぐにサボってしまうので、丸を付けることで達成感があり<br>
-                        サボり防止になっています。</dd>
-                    <dt>掃除ログ（年間）</dt>
-                    <dd>月1回や半年に1回の掃除を一覧表にして、出来たら丸を付けます。<br>
-                        年末の大掃除リストとしても使っています。</dd>
-                    <dt>欲しいものリスト</dt>
-                    <dd>衝動買い防止に！<br>
-                        欲しい理由や、価格・素材、複数の商品との比較情報などを書いて<br>
-                        本当に必要か？その商品でよいか？を考えることで納得した買い物ができます。</dd>
-                    <dt>なんでのメモ</dt>
-                    <dd>頭の中を整理するために書いています。<br>
-                        &rtrif; もやもやした気持ちを書き出す<br>
-                        &rtrif; 思い付きを書き留めて、深堀りする<br>
-                        &rtrif; 調べてことをまとめる<br>
+            <section class="daily">
+                <div class="title_s">
+                    <h4>Daily Log（デイリーログ）</h4>
+                </div>
+                <div class="wrap_s">
+                    <p>1日の予定やタスクを管理するデイリーログ。<br>
+                        予定とやることを箇条書きで書きます。<br>
+                        やることは、なるべく細分化しましょう。<br>
+                        書いたら、優先順位をつけていきます。<br>
                         <br>
-                    </dd>
-                </dl>
-                <p>いかがでしたか？参考になる項目はあったでしょうか。<br>
-                    書き出してみると、私自身は、家族との時間やお家で快適に過ごせるように、生活を整えていたいのだと、実感します。</p>
-            </div>
-        </section>
-        <section class="conclusion">
-            <div class="title_m">
-                <h3>手帳を書くことで得られるの効果</h3>
-            </div>
-            <div class="wrap_s">
-                <ol>
-                    <li>書き出すことで考える余裕ができ、思考を整理できる</li>
-                    <li>予定・やりたいことを可視化することで、先延ばしが減る
-                    </li>
-                    <li>書いたものを見返すことで、自分を客観的に見れる</li>
-                </ol>
-                <div class="catch">
-                    <p>1日のうち、少しの時間を手帳の充てるだけで<br>
-                        ライフスタイルが豊かになりますよ<br>
-                        お気に入りの手帳とペンで、はじめてみませんか。</p>
+                        後は、優先度の高い事柄から行動していきましょう。<br>
+                        疲れているときなどは、数分で完了することからやったり、落ち込んでいるときは、気分をリフレッシュさせることを優先したり、体調や気分と相談して決めると行動しやすくなります。
+                    </p>
+                </div>
+                <div class="illustrated">
+                    <figure>
+                        <img src="images/daily01.jpg" alt="デイリーの見本1">
+                        <figcaption>1日分ずつを記入する、シンプルなデイリーログ。</figcaption>
+                    </figure>
+                </div>
+                <div class="illustrated">
+                    <figure>
+                        <img src="images/daily02.jpg" alt="デイリーの見本2">
+                        <figcaption>見開き1週間の、シンプルなデイリーログ。</figcaption>
+                    </figure>
+                </div>
+                <div class="illustrated">
+                    <figure>
+                        <img src="images/daily03.jpg" alt="デイリーの見本3">
+                        <figcaption>1ページ2日の、デイリーログ。<br>
+                            縦に時間軸を書いて、時間の管理もできます。</figcaption>
+                    </figure>
+                </div>
+            </section>
+            <div class="usage">
+                <div class="title_s">
+                    <h4>記号で見やすくする</h4>
+                </div>
+                <div class="wrap_s">
+                    <p>箇条書きの先頭に記号をつけて、内容がパッと見て、素早く簡潔に分かるようにします。<br>
+                        <br>
+                        【 情報の種類 】<br>
+                        「&middot;」&#058;やること（当日のToDoなどすぐに実行できるもの）<br>
+                        「&#9675;」&#058;イベント（誕生日や、商談など大事な予定）<br>
+                        「&mdash;」&#058;メモ書き（思いついたことや、すぐに実行しないこと、情報など）<br>
+                        「&ast;」&#058;重要（とくに重要なイベントなど）<br>
+                        「&#033;」&#058;アイデア（ひらめきや今後のためのアイデア）<br>
+                        <br>
+                        【 やることの進捗度 】<br>
+                        「×」&#058;完了した<br>
+                        「&gt;」&#058;別の日にやる予定<br>
+                        「&mdash;&mdash;&mdash;」&#058;キャンセル（やらないことにする）
+                    </p>
                 </div>
             </div>
-        </section>
+        </section><!-- recipe END -->
+    </main>
 
-        <section class="blog">
+    <!-- customize -->
+    <section class="customize">
+        <div class="title_l">
+            <h2>自分だけのコレクションページ</h2>
+        </div>
+        <div class="wrap_s">
+            <p>基本の書き方に慣れてきたら、自分だけのコレクションのページを作ってみてはいかがですか？<br>
+                私が活用しているコレクションページの一部をご紹介します。
+            </p>
+            <dl>
+                <dt>食事ログ</dt>
+                <dd>
+                    夕食だけを記録しています。<br>外食の回数や、食生活の乱れがないかcheck出来たり<br>献立に迷ったときなどに役立ちます。
+                </dd>
+                <dt>お出掛けログ</dt>
+                <dd>出不精解消に書いています。</dd>
+                <dt>天気&amp;体調ログ</dt>
+                <dd>気圧の変化で体調を崩すことがあるので、記録しています。</dd>
+                <dt>家事ログ（月間）</dt>
+                <dd>家事の一覧表を作り、デイリーで「今日やると決めた家事」が実行できたら、丸を付けています。<br>
+                    すぐにサボってしまうので、丸を付けることで達成感があり、サボり防止になっています。</dd>
+                <dt>掃除ログ（年間）</dt>
+                <dd>月1回や半年に1回の掃除を一覧表にして、出来たら丸を付けます。<br>
+                    年末の大掃除リストとしても使っています。</dd>
+                <dt>欲しいものリスト</dt>
+                <dd>衝動買い防止に！<br>
+                    欲しい理由や、価格・素材、複数の商品との比較情報などを書いて<br>
+                    本当に必要か？その商品でよいか？を考えることで納得した買い物ができます。</dd>
+                <dt>なんでのメモ</dt>
+                <dd>頭の中を整理するために書いています。<br>
+                    &rtrif; もやもやした気持ちを書き出す<br>
+                    &rtrif; 思い付きを書き留めて、深堀りする<br>
+                    &rtrif; 調べてことをまとめる<br>
+                </dd>
+            </dl>
+            <p>いかがでしたか？参考になる項目はあったでしょうか。<br>
+                書き出してみると、私自身は、家族との時間やお家で快適に過ごせるように、生活を整えていたいのだと、実感します。</p>
+        </div>
+    </section><!-- customize END -->
+
+    <!-- conclusion -->
+    <section class="conclusion">
+        <div class="title_l">
+            <h2>手帳を書くことで得られるの効果</h2>
+        </div>
+        <div class="wrap_s">
+            <ol>
+                <li>書き出すことで考える余裕ができ、思考を整理できる</li>
+                <li>予定・やりたいことを可視化することで、先延ばしが減る
+                </li>
+                <li>書いたものを見返すことで、自分を客観的に見れる</li>
+            </ol>
+            <div class="catch">
+                <p>1日のうち、少しの時間を手帳の充てるだけで<br>
+                    ライフスタイルが豊かになりますよ<br>
+                    お気に入りの手帳とペンで、はじめてみませんか。</p>
+            </div>
+        </div>
+    </section><!-- conclusion END -->
+
+    <!-- blog -->
+    <section class="blog">
+        <h3>手帳時間に役立つ関連情報</h3>
+        <div class="flexbox">
             <div class="topic">
                 <figure>
                     <a href="#">
@@ -269,8 +295,9 @@
                     </a>
                 </figure>
             </div>
-        </section>
-    </div>
+        </div>
+    </section><!-- blog END -->
+
 </body>
 
 </html>

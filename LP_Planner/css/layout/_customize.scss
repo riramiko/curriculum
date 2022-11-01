@@ -1,0 +1,32 @@
+@use "../global" as g;
+
+.customize {
+    .wrap_s {
+        p {
+            margin-bottom: 40px;
+        }
+        dl {
+            dt {
+                margin-bottom: 10px;
+                padding: 5px 10px;
+                width: 45%;
+                background: #FFF6D9;
+                font-size: 20px;
+                border-left: solid 5px g.$subcolor;
+                font-weight: bold;
+                color: g.$subcolor;
+                position: relative;
+                box-shadow: 2px 2px 2px rgba(0,0,0,.2);
+                @include g.max-w(sm) {
+                    width: 65%;
+                    font-size: 1.2em;
+                }
+            }
+
+            dd {
+                padding-left: 35px;
+                padding-bottom: 40px;
+            }
+        }
+    }
+}

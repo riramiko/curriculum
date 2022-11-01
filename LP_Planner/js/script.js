@@ -1,15 +1,22 @@
-const img_src = ["images/main_01.jpg", "images/main_02.jpg", "images/main_03.jpg", "images/main_04.jpg", "images/main_05.jpg", "images/main_06.jpg"];
-      let num = -1;
- 
-      function slide_time() {
-        if (num === 5) {
-          num = 0;
-        } else {
-          num++;
+$(function(){
+  $('.slider').slick({
+    autoplay: true, //自動でスクロール
+    autoplaySpeed: 3000, //自動再生のスライド切り替えまでの時間を設定
+    speed: 4000, //スライドが流れる速度を設定
+    cssEase: "linear", //スライドの流れ方を等速に設定
+    slidesToShow: 2.5, //表示するスライドの数
+    swipe: false, // 操作による切り替えはさせない
+    arrows: false, //矢印非表示
+    pauseOnFocus: false, //スライダーをフォーカスした時にスライドを停止させるか
+    pauseOnHover: false, //スライダーにマウスホバーした時にスライドを停止させるか
+    responsive: [
+      {
+        breakpoint: 750,
+        settings: {
+          slidesToShow: 3, //画面幅750px以下でスライド3枚表示
         }
-        document.getElementById("slide_img").src = img_src[num];
       }
- 
-      setInterval(slide_time, 2700);
-
+    ]
+  });
+});
       

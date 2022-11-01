@@ -1,0 +1,96 @@
+@use "../global" as g;
+
+header {
+    margin-bottom: 60px;
+
+    @include g.max-w(sm) {
+        margin-bottom: 30px;
+    }
+
+    .site_title {
+        margin: 0 auto 40px;
+        width: g.$screen-w;
+
+        h1 {
+            width: 100%;
+            padding-top: 50px;
+            text-align: center;
+            color: g.$subcolor;
+            border-bottom: solid 2px g.$subcolor;
+        }
+    }
+
+    .top_vision {
+        background-color: g.$maincolor;
+
+        .wrap_m {
+            margin: 0 auto;
+            padding: 40px 0;
+
+            @include g.max-w(sm) {
+                width: 100%;
+                padding: 20px 0;
+            }
+
+            h2 {
+                text-align: center;
+                color: g.$subcolor;
+            }
+
+            .flexbox {
+                justify-content: center;
+
+                .leading {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    background-color: g.$subcolor;
+                    border-radius: 40px;
+                    width: 25%;
+                    margin-right: 10%;
+
+                    @include g.max-w(sm) {
+                        border-radius: 30px;
+                        width: 35%;
+                        margin-right: 5%;
+                    }
+
+                    p {
+                        color: g.$bgcolor;
+                        text-align: center;
+                        font-size: 1.5rem;
+                        line-height: 2.5;
+
+                        @include g.max-w(sm) {
+                            font-size: 1.5rem;
+                            line-height: 2;
+                        }
+                    }
+                }
+
+                ul {
+                    width: 50%;
+                    list-style: none;
+
+                    li {
+                        border-left: solid 8px g.$subcolor;
+                        background: #FFF6D9;
+                        margin-bottom: 5px;
+                        padding: 0.5rem;
+                        width: 80%;
+                    }
+                }
+            }
+        }
+
+        .top_photo {
+            .slider {
+                width: 125%;
+
+                img {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}

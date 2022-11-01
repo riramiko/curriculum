@@ -1,0 +1,37 @@
+// 画面の幅
+$screen-w : 80%;
+// コンテンツの幅
+$content-w : 70%;
+// メインカラー
+$maincolor : #FAC6B5;
+// サブカラー
+$subcolor : #90623c;
+// アクセントカラー
+$accentcolor : #78B3A9;
+// 背景色
+$bgcolor : #FAECE1;
+// 文字色
+$fontcolor : #383838;
+
+
+// breakpointの設定---------------------------------------------------------------------
+$breakpoints: (
+    'xl': '1440px',
+    'lg': '1280px',
+    'md': '1024px',
+    'tb': '850px',
+    'sm': '600px',
+    'xs': '414px') !default;
+
+// Media Queryの設定
+@mixin max-w($breakpoint) {
+    @media only screen and (max-width: #{map-get($breakpoints, $breakpoint)}) {
+        @content;
+    }
+}
+
+@mixin min-w($breakpoint) {
+    @media only screen and (min-width: #{map-get($breakpoints, $breakpoint)}) {
+        @content;
+    }
+}

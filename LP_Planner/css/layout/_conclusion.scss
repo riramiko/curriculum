@@ -1,0 +1,54 @@
+@use "../global" as g;
+
+.conclusion {
+    margin-bottom: 70px;
+
+    .wrap_s {
+        ol {
+            margin-left: 15%;
+            margin-bottom: 30px;
+            counter-reset: num;
+            list-style-type: none;
+
+            @include g.max-w(sm) {
+                margin-left: 0;
+            }
+
+            li {
+                position: relative;
+                padding-left: 30px;
+                line-height: 1.5em;
+                padding: 0.5em 0.5em 0.5em 34px;
+
+                &::before {
+                    position: absolute;
+                    counter-increment: num;
+                    content: counter(num);
+                    display: inline-block;
+                    background: g.$subcolor;
+                    color: #FFF;
+                    font-weight: bold;
+                    border-radius: 50%;
+                    left: 0;
+                    width: 30px;
+                    height: 30px;
+                    text-align: center;
+                }
+
+                @include g.max-w(tb) {
+                    &::before {
+                        width: 25px;
+                        height: 25px;
+                    }
+                }
+            }
+
+            .catch {
+                margin-left: 15%;
+                font-weight: bold;
+                color: g.$subcolor;
+
+            }
+        }
+    }
+}

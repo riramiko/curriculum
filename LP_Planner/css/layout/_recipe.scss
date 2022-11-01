@@ -1,0 +1,33 @@
+@use "../global" as g;
+
+.recipe {
+    .wrap_s {
+        p {
+            margin-bottom: 20px;
+        }
+
+        ul {
+            list-style: none;
+
+            li {
+                margin-left: 40px;
+
+                &:last-child {
+                    margin-bottom: 60px;
+                }
+
+                &:before {
+                    content: "";
+                    width: 10px;
+                    height: 10px;
+                    display: inline-block;
+                    background-color: g.$subcolor;
+                    border-radius: 50%;
+                    position: relative;
+                    top: -1px;
+                    margin-right: 10px;
+                }
+            }
+        }
+    }
+}

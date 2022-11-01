@@ -1,0 +1,94 @@
+@use "../global" as g;
+
+body {
+    font-family: 'Kiwi Maru', serif;
+    font-size: 22px;
+    background-color: g.$bgcolor;
+    color: g.$fontcolor;
+
+    @include g.max-w(tb) {
+        font-size: 16px;
+    }
+}
+
+.wrap_m {
+    width: g.$screen-w;
+}
+
+.wrap_s {
+    width: g.$content-w;
+    margin: 0 auto;
+}
+
+.flexbox {
+    display: flex;
+}
+
+.title_l {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 120px;
+    background-color: g.$maincolor;
+    border-top: 2px solid g.$subcolor;
+    border-bottom: 2px solid g.$subcolor;
+    margin-bottom: 60px;
+    color: g.$subcolor;
+
+    @include g.max-w(sm) {
+        height: 80px;
+        margin-bottom: 30px;
+    }
+}
+
+.title_m {
+    margin: 0 auto 20px;
+    display: flex;
+    align-items: flex-end;
+    width: g.$content-w;
+    height: 2em;
+    border-bottom: dotted 3px g.$subcolor;
+    padding-left: 40px;
+
+    @include g.max-w(sm) {
+        width: 90%;
+        padding-left: 15px;
+    }
+}
+
+.title_s {
+    margin: 0 auto 25px;
+    width: g.$content-w;
+    padding: 5px 10px;
+    border-left: solid 5px g.$subcolor;
+    background-color: g.$maincolor;
+    box-shadow: 3px 3px 3px rgba(0,0,0,.2);
+}
+
+.illustrated {
+    width: 564px;
+    margin: 0 auto 60px;
+    text-align: center;
+
+    @include g.max-w(sm) {
+        width: 100%;
+        margin: 0 auto 40px;
+    }
+
+    figure {
+        figcaption {
+            text-align: left;
+
+            @include g.max-w(sm) {
+                padding-left: 10%;
+            }
+        }
+
+        @include g.max-w(sm) {
+
+            img {
+                width: 90vw;
+            }
+        }
+    }
+}
