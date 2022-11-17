@@ -22,10 +22,17 @@
         margin-bottom: 30px;
         height: 70px;
         background-color: g.$accentcolor;
+
         @include g.max-w(sm) {
-            height: 60px;
-            h2 {
-                font-size: 1.2em;
+            padding: 10px 0;
+        }
+
+        h2 {
+            font-size: 1.2em;
+
+            @include g.max-w(sm) {
+                font-size: 20px;
+                text-align: center;
             }
         }
     }

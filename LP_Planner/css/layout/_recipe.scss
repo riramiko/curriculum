@@ -16,6 +16,10 @@
                     margin-bottom: 60px;
                 }
 
+                @include g.max-w(sm) {
+                    margin-left: 1px;
+                }
+
                 &:before {
                     content: "";
                     width: 10px;

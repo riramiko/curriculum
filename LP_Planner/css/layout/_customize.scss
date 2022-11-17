@@ -5,6 +5,7 @@
         p {
             margin-bottom: 40px;
         }
+
         dl {
             dt {
                 margin-bottom: 10px;
@@ -16,9 +17,10 @@
                 font-weight: bold;
                 color: g.$subcolor;
                 position: relative;
-                box-shadow: 2px 2px 2px rgba(0,0,0,.2);
+                box-shadow: 2px 2px 2px rgba(0, 0, 0, .2);
+
                 @include g.max-w(sm) {
-                    width: 65%;
+                    width: 80%;
                     font-size: 1.2em;
                 }
             }
@@ -26,6 +28,10 @@
             dd {
                 padding-left: 35px;
                 padding-bottom: 40px;
+
+                @include g.max-w(sm) {
+                    padding-left: 25px;
+                }
             }
         }
     }

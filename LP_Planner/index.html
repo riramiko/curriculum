@@ -11,9 +11,6 @@
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
     <link rel="stylesheet" type="text/css"
         href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-    <script src="js/script.js"></script>
     <title>かんたんに書ける手帳</title>
 </head>
 
@@ -21,9 +18,28 @@
 
     <!-- header -->
     <header>
-        <div class="site_title">
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        <div class="site_title" id="site_title">
             <h1>かんたんに書ける手帳</h1>
         </div>
+
+        <nav id="nav" class="globalMenuSp">
+            <ul class="flexbox">
+                <li><a class="btn" href="#site_title">Top</a></li>
+                <li><a class="btn" href="#recipe">用意するモノ</a></li>
+                <li><a class="btn" href="#monthly">予定管理</a></li>
+                <li><a class="btn" href="#daily">行動管理</a></li>
+                <li><a class="btn" href="#customize">コレクションページ</a></li>
+                <li><a class="btn" href="#conclusion">手帳の効果</a></li>
+                <li><a class="btn" href="#blog">ブログ</a></li>
+            </ul>
+        </nav>
+
         <div class="top_vision">
             <div class="wrap_m">
                 <h2>ボールペンとノートだけで始める<br>
@@ -58,7 +74,7 @@
     </header><!-- header END -->
 
     <!-- about -->
-    <section class="about">
+    <section class="about scroll-point" id="about">
         <div class="wrap_s">
             <p>日々の暮らしの中、忙しく1日が24時間では足りないと感じている人は多いのではないでしょうか。<br>
                 <br>
@@ -68,7 +84,7 @@
             </p>
         </div>
         <div class="title_about">
-            <h2>書いて忘れることで、「やりたいこと」が叶う</h2>
+            <h2>書いて忘れることで、<br class="linefeed">「やりたいこと」が叶う</h2>
         </div>
         <div class="wrap_s">
             <p>「覚えておく」ことは、脳が常に活動している状態ですので、疲れてくるとパフォーマンスが低下します。<br>
@@ -88,9 +104,9 @@
         <!-- recipe -->
         <section class="recipe">
             <div class="title_l">
-                <h2>思考と行動を管理する手帳の書き方</h2>
+                <h2>思考と行動を管理する<br class="linefeed">手帳の書き方</h2>
             </div>
-            <div class="title_m">
+            <div class="title_m scroll-point" id="recipe">
                 <h3>用意する物は２つ</h3>
             </div>
             <div class="wrap_s">
@@ -113,7 +129,7 @@
                     <li>Daily Log（デイリーログ）</li>
                 </ul>
             </div>
-            <section class="monthly">
+            <section class="monthly scroll-point" id="monthly">
                 <div class="title_s">
                     <h4>Monthly Log（マンスリーログ）</h4>
                 </div>
@@ -148,7 +164,7 @@
                     </figure>
                 </div>
             </section>
-            <section class="daily">
+            <section class="daily scroll-point" id="daily">
                 <div class="title_s">
                     <h4>Daily Log（デイリーログ）</h4>
                 </div>
@@ -190,15 +206,24 @@
                     <p>箇条書きの先頭に記号をつけて、内容がパッと見て、素早く簡潔に分かるようにします。<br>
                         <br>
                         【 情報の種類 】<br>
+                        <br class="linefeed">
                         「&middot;」&#058;やること（当日のToDoなどすぐに実行できるもの）<br>
+                        <br class="linefeed">
                         「&#9675;」&#058;イベント（誕生日や、商談など大事な予定）<br>
+                        <br class="linefeed">
                         「&mdash;」&#058;メモ書き（思いついたことや、すぐに実行しないこと、情報など）<br>
+                        <br class="linefeed">
                         「&ast;」&#058;重要（とくに重要なイベントなど）<br>
+                        <br class="linefeed">
                         「&#033;」&#058;アイデア（ひらめきや今後のためのアイデア）<br>
+                        <br class="linefeed">
                         <br>
                         【 やることの進捗度 】<br>
+                        <br class="linefeed">
                         「×」&#058;完了した<br>
+                        <br class="linefeed">
                         「&gt;」&#058;別の日にやる予定<br>
+                        <br class="linefeed">
                         「&mdash;&mdash;&mdash;」&#058;キャンセル（やらないことにする）
                     </p>
                 </div>
@@ -207,7 +232,7 @@
     </main>
 
     <!-- customize -->
-    <section class="customize">
+    <section class="customize scroll-point" id="customize">
         <div class="title_l">
             <h2>自分だけのコレクションページ</h2>
         </div>
@@ -247,7 +272,7 @@
     </section><!-- customize END -->
 
     <!-- conclusion -->
-    <section class="conclusion">
+    <section class="conclusion scroll-point" id="conclusion">
         <div class="title_l">
             <h2>手帳を書くことで得られるの効果</h2>
         </div>
@@ -267,7 +292,7 @@
     </section><!-- conclusion END -->
 
     <!-- blog -->
-    <section class="blog">
+    <section class="blog scroll-point" id="blog">
         <h3>手帳時間に役立つ関連情報</h3>
         <div class="flexbox">
             <div class="topic">
@@ -297,6 +322,14 @@
             </div>
         </div>
     </section><!-- blog END -->
+
+    <!-- JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="js/script.js"></script>
+    <!-- JavaScript END -->
 
 </body>
 

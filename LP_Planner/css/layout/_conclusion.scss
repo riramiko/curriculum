@@ -42,13 +42,11 @@
                     }
                 }
             }
-
-            .catch {
-                margin-left: 15%;
-                font-weight: bold;
-                color: g.$subcolor;
-
-            }
+        }
+        .catch {
+            margin-left: 15%;
+            font-weight: bold;
+            color: g.$subcolor;
         }
     }
 }
